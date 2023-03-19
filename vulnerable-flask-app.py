@@ -165,9 +165,9 @@ def login():
     username=request.args.get("username")
     passwd=request.args.get("password")
     if "anil" in username and "cyber" in passwd:
-        return jsonify(data="Login successful"), 200
+        return jsonify(data="Login successful."), 200
     else:
-        return jsonify(data="Login unsuccessful"), 403
+        return jsonify(data="Login unsuccessful."), 403
 
 @app.route('/route')
 def route():
